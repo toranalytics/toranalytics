@@ -15,4 +15,4 @@ correct most, and routes subagents to cheaper models.
 /plugin install off-the-wall --marketplace toranalytics/off-the-wall
 ```
 
-Seoul, Korea
+Seoul, Korea · [blog](https://toranalytics.github.io)
