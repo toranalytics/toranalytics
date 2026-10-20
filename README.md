@@ -15,4 +15,8 @@ correct most, and routes subagents to cheaper models.
 /plugin install off-the-wall --marketplace toranalytics/off-the-wall
 ```
 
+**Writing**
+
+- [My coding agent cost $1,064 last week. 44% of it was the cache re-writing itself](https://toranalytics.github.io/cache-leak/): two cache breakpoints that were placed to protect the cache, and what measuring them showed
+
 Seoul, Korea · [blog](https://toranalytics.github.io)
