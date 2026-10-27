@@ -2,14 +2,13 @@
 
 I build tools that make coding agents learn how *you* work, and I measure whether they actually do.
 
-**[Off the Wall](https://github.com/toranalytics/off-the-wall)**: stop telling your coding agent the same thing twice.
-A plugin for Claude Code and Codex that quotes your own past corrections back before each answer, shows what you
-correct most, and routes subagents to cheaper models.
+**[Off the Wall](https://github.com/toranalytics/off-the-wall)**: an early plugin for Claude Code and Codex that quotes your own past corrections
+from the same working directory back before each answer, shows what you correct most, and gives the orchestrator
+model-selection guidance for subagents.
 
-- Quoting your words beat summarising them into rules: 25 wins, 11 ties, 3 losses vs nothing attached;
-  distilled rules did no better than random ones (39 replayed real requests, blind pairwise grading)
-- Subagent routing: $0.17 instead of $0.30–0.44 on the same delegation, same result
-- No API key, everything stays on your machine
+- Not a guarantee of better answers or lower cost. The evidence so far is one person's text replays plus a synthetic demo and one Codex smoke run
+- Hooks need to be trusted in Codex (`/hooks`) before they run; Claude Code support is experimental
+- No separate API key. Storage is local, but judging and reports send excerpts to your own model provider
 
 ```
 /plugin install off-the-wall --marketplace toranalytics/off-the-wall
