@@ -8,7 +8,7 @@ model-selection guidance for subagents.
 
 - Not a guarantee of better answers or lower cost. The evidence so far is one person's text replays plus a synthetic demo and one Codex smoke run
 - Hooks need to be trusted in Codex (`/hooks`) before they run; Claude Code support is experimental
-- Measured so far (synthetic personal-preference tasks, Claude Code with haiku): the model followed a preference it could not otherwise know 1/33 times with no recall, 9/33 with Off the Wall and 17/33 with its opt-in wide recall; see [the evidence and its limits](https://github.com/toranalytics/off-the-wall#evidence)
+- Measured so far (synthetic personal-preference tasks, Claude Code with haiku): the model followed a preference it could not otherwise know 1/33 times with no recall, 9/33 with Off the Wall and 17/33 with wide recall (the default since 0.3.0); see [the evidence and its limits](https://github.com/toranalytics/off-the-wall#evidence)
 - No separate API key. Storage is local, but judging and reports send excerpts to your own model provider
 
 ```
